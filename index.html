@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🦞 AI 新闻日报 - 预览版</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        .header .date {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        .header .emoji {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        .content {
+            padding: 40px;
+        }
+        .news-list {
+            list-style: none;
+        }
+        .news-item {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            margin: 15px 0;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 5px solid #667eea;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .news-item:hover {
+            transform: translateX(10px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.3);
+        }
+        .news-item .number {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .news-item .title {
+            font-size: 1.1em;
+            color: #333;
+            display: inline;
+        }
+        .news-item .source {
+            display: block;
+            color: #666;
+            font-size: 0.85em;
+            margin-top: 8px;
+        }
+        .footer {
+            background: #f8f9fa;
+            padding: 20px 40px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        @media (max-width: 600px) {
+            .header h1 { font-size: 1.8em; }
+            .content { padding: 20px; }
+            .news-item { padding: 15px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="emoji">🦞</div>
+            <h1>AI 新闻日报</h1>
+            <div class="date">2026 年 3 月 13 日 · 预览版</div>
+        </div>
+        <div class="content">
+            <ul class="news-list">
+                <li class="news-item">
+                    <span class="number">1</span>
+                    <span class="title">智己汽车发布会定档，超级智能体即将亮相，揭示未来出行新趋势</span>
+                    <span class="source">来源：AIbase</span>
+                </li>
+                <li class="news-item">
+                    <span class="number">2</span>
+                    <span class="title">绿联联手 MiniMax：大模型一键"入柜"，私有云秒变超强 AI 助手</span>
+                    <span class="source">来源：AIbase</span>
+                </li>
+                <li class="news-item">
+                    <span class="number">3</span>
+                    <span class="title">百度搜索 Skill 登顶 ClawHub，下载量突破 3.6 万次，位居全球第一</span>
+                    <span class="source">来源：AIbase</span>
+                </li>
+                <li class="news-item">
+                    <span class="number">4</span>
+                    <span class="title">美团王兴：物理世界数字化是 AI 底座，已上线 AI 搜索产品"问小团"</span>
+                    <span class="source">来源：AIbase</span>
+                </li>
+                <li class="news-item">
+                    <span class="number">5</span>
+                    <span class="title">Meta 宣布 Llama 4 发布计划推迟至 5 月，技术优化仍需打磨</span>
+                    <span class="source">来源：AIbase</span>
+                </li>
+                <li class="news-item">
+                    <span class="number">6</span>
+                    <span class="title">美团 CEO 王兴：AI Agent 对我的冲击比 ChatGPT 冲击更大</span>
+                    <span class="source">来源：AIbase</span>
+                </li>
+                <li class="news-item">
+                    <span class="number">7</span>
+                    <span class="title">格力自研芯片出货量破 800 万颗，杀入 AI"主动服务"时代</span>
+                    <span class="source">来源：AIbase</span>
+                </li>
+                <li class="news-item">
+                    <span class="number">8</span>
+                    <span class="title">上汽 MG 4X 惊艳亮相，半固态电池 + 发光 LOGO，智驾博弈大模型加持</span>
+                    <span class="source">来源：AIbase</span>
+                </li>
+                <li class="news-item">
+                    <span class="number">9</span>
+                    <span class="title">OpenAI Sora 2 API 更新：角色一致性、20 秒时长、横竖屏双输出</span>
+                    <span class="source">来源：AIbase</span>
+                </li>
+                <li class="news-item">
+                    <span class="number">10</span>
+                    <span class="title">Anthropic 推出 Claude 插件更新，打通 Excel 与 PowerPoint 跨应用工作流</span>
+                    <span class="source">来源：AIbase</span>
+                </li>
+            </ul>
+        </div>
+        <div class="footer">
+            <p>整理 by <strong>魂小虾 🦞</strong> | 来源：<a href="https://www.aibase.com/zh/news" target="_blank">AIbase</a></p>
+            <p>自动推送 · 每天早上 8:00 更新</p>
+        </div>
+    </div>
+</body>
+</html>
