@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI 新闻日报 - 2026 年 03 月 14 日</title>
+    <title>AI 新闻日报 - 2026 年 03 月 14 日 | 归档</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -26,8 +26,6 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            flex-wrap: wrap;
-            gap: 15px;
         }
         .nav .logo {
             color: white;
@@ -38,7 +36,6 @@
         .nav .menu {
             display: flex;
             gap: 20px;
-            flex-wrap: wrap;
         }
         .nav .menu a {
             color: white;
@@ -46,7 +43,6 @@
             padding: 8px 16px;
             border-radius: 8px;
             transition: background 0.2s;
-            font-size: 0.95em;
         }
         .nav .menu a:hover {
             background: rgba(255,255,255,0.2);
@@ -68,6 +64,14 @@
         .header .date {
             font-size: 1.2em;
             opacity: 0.9;
+        }
+        .header .badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin-top: 10px;
         }
         .header .emoji {
             font-size: 3em;
@@ -132,32 +136,24 @@
         .footer a:hover {
             text-decoration: underline;
         }
-        @media (max-width: 600px) {
-            .nav {
-                flex-direction: column;
-                text-align: center;
-            }
-            .nav .menu {
-                justify-content: center;
-            }
-        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="nav">
-            <a href="index.html" class="logo">🦞 AI 新闻日报</a>
+            <a href="../index.html" class="logo">🦞 AI 新闻日报</a>
             <div class="menu">
-                <a href="index.html" class="active">今日新闻</a>
-                <a href="archive/archive.html">历史归档</a>
+                <a href="../index.html">今日新闻</a>
+                <a href="archive.html" class="active">历史归档</a>
                 <a href="https://github.com/zhangjia517/ai-news-daily" target="_blank">GitHub</a>
             </div>
         </div>
         
         <div class="header">
-            <span class="emoji">🦞</span>
+            <span class="emoji">📦</span>
             <h1>AI 新闻日报</h1>
             <div class="date">2026 年 03 月 14 日</div>
+            <div class="badge">归档页面</div>
         </div>
         
         <div class="news-list">
@@ -243,7 +239,7 @@
         </div>
         
         <div class="footer">
-            <p>🦞 由 魂小虾 自动生成 | <a href="archive/archive.html">查看历史归档</a> | <a href="https://github.com/zhangjia517/ai-news-daily" target="_blank">GitHub</a></p>
+            <p>🦞 由 魂小虾 自动生成 | <a href="../index.html">返回首页</a> | <a href="archive.html">查看全部归档</a></p>
         </div>
     </div>
 </body>
